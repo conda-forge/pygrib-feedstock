@@ -8,10 +8,13 @@ source:
   fn: pygrib-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/p/pygrib/pygrib-{{ version }}.tar.gz
   md5: e9ae04cb987992691b388b16be53214a
+  patches:
+      # Fixed tab/space inconsistency.
+      - tab_space.patch
 
 build:
   number: 0
-  skip: true  # [win or py3k]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -43,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - dopplershift
+    - jjhelmus
