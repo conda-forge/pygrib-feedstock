@@ -13,7 +13,7 @@ source:
       - tab_space.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -21,14 +21,14 @@ requirements:
     - python
     - ecmwf_grib
     - jasper
-    - libpng
+    - libpng 1.6*
     - pyproj
 
   run:
     - python
     - ecmwf_grib
     - jasper
-    - libpng
+    - libpng 1.6*
     - pyproj
     - numpy
 
