@@ -5,7 +5,7 @@ Home: http://github.com/jswhit/pygrib
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: python GRIB (editions 1 and 2) reader
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygrib-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pygrib-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygrib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygrib-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygrib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygrib-feedstock/branch/master)
