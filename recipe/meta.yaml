@@ -33,17 +33,19 @@ requirements:
     - numpy
 
 test:
-  commands:
-    - grib_repack -h
   imports:
     - pygrib
+  commands:
+    - grib_repack -h
+    #- conda inspect linkages -p $PREFIX pygrib  # [not win]
+    #- conda inspect objects -p $PREFIX pygrib  # [osx]
 
 about:
   home: https://github.com/jswhit/pygrib
   license: MIT
   license_family: MIT
   license_file: COPYING
-  summary: 'python GRIB (editions 1 and 2) reader'
+  summary: 'Python GRIB (editions 1 and 2) reader.'
   doc_url: https://jswhit.github.io/pygrib/
   dev_url: https://github.com/jswhit/pygrib
 
