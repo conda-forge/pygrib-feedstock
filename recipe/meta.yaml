@@ -1,19 +1,22 @@
-{% set version = "2.0.1" %}
+{%set name = "pygrib" %}
+{%set version = "2.0.2" %}
+{%set hash_type = "sha256" %}
+{%set hash_val = "82eb5e6037217f7ef200521ffc90c59c1db6008ca10d84a5e8ae80008b94ae00" %}
 
 package:
-  name: pygrib
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: pygrib-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/p/pygrib/pygrib-{{ version }}.tar.gz
-  md5: e9ae04cb987992691b388b16be53214a
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  {{ hash_type }}: {{ hash_val }}
   patches:
       # Fixed tab/space inconsistency.
       - tab_space.patch
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -39,9 +42,13 @@ test:
     - pygrib
 
 about:
-  home: http://github.com/jswhit/pygrib
+  home: https://github.com/jswhit/pygrib
   license: MIT
+  license_family: MIT
+  license_file: COPYING
   summary: 'python GRIB (editions 1 and 2) reader'
+  doc_url: https://jswhit.github.io/pygrib/
+  dev_url: https://github.com/jswhit/pygrib
 
 extra:
   recipe-maintainers:
