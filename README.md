@@ -7,9 +7,21 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: python GRIB (editions 1 and 2) reader
+Summary: Python GRIB (editions 1 and 2) reader.
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygrib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pygrib-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygrib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygrib-feedstock)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygrib/badges/version.svg)](https://anaconda.org/conda-forge/pygrib)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygrib/badges/downloads.svg)](https://anaconda.org/conda-forge/pygrib)
 
 Installing pygrib
 =================
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygrib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pygrib-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygrib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygrib-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygrib/badges/version.svg)](https://anaconda.org/conda-forge/pygrib)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygrib/badges/downloads.svg)](https://anaconda.org/conda-forge/pygrib)
 
 
 Updating pygrib-feedstock
