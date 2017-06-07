@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -21,14 +21,14 @@ requirements:
     - python
     - ecmwf_grib
     - jasper
-    - libpng >=1.6.23,<1.7
+    - libpng >=1.6.28,<1.7
     - pyproj
 
   run:
     - python
     - ecmwf_grib
     - jasper
-    - libpng >=1.6.23,<1.7
+    - libpng >=1.6.28,<1.7
     - pyproj
     - numpy
 
@@ -37,8 +37,8 @@ test:
     - pygrib
   commands:
     - grib_repack -h
-    #- conda inspect linkages -p $PREFIX pygrib  # [not win]
-    #- conda inspect objects -p $PREFIX pygrib  # [osx]
+    - conda inspect linkages -p $PREFIX pygrib  # [not win]
+    - conda inspect objects -p $PREFIX pygrib  # [osx]
 
 about:
   home: https://github.com/jswhit/pygrib
