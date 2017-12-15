@@ -9,7 +9,7 @@ source:
   sha256: 82eb5e6037217f7ef200521ffc90c59c1db6008ca10d84a5e8ae80008b94ae00
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win]
 
 requirements:
@@ -17,14 +17,14 @@ requirements:
     - python
     - ecmwf_grib
     - jasper
-    - libpng >=1.6.22,<1.6.31
+    - libpng >=1.6.32,<1.6.35
     - pyproj
 
   run:
     - python
     - ecmwf_grib
     - jasper
-    - libpng >=1.6.22,<1.6.31
+    - libpng >=1.6.32,<1.6.35
     - pyproj
     - numpy
 
