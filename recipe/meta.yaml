@@ -17,11 +17,11 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
+    - pip
     - ecmwf_grib
     - jasper
     - libpng
     - pyproj
-
   run:
     - python
     - ecmwf_grib
