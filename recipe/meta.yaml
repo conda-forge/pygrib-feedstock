@@ -21,16 +21,15 @@ requirements:
     - eccodes
     - jasper
     - libpng
-    - openjpeg
     - pyproj
     - zlib
   run:
     - python
+    - setuptools
     - eccodes
     - jasper
     - libpng
     - numpy
-    - openjpeg
     - pyproj
     - zlib
 
