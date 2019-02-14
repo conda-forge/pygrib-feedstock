@@ -1,4 +1,4 @@
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 
 package:
   name: pygrib
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pygrib/pygrib-{{ version }}.tar.gz
-  sha256: f717adb96f3e2e6a6f52c0b377a57086f187160b104e49f6d96a262c3910e3df
+  sha256: c3a828c1121c686814c2cfe281a7a3be196a22b9754306bf61c3fd65c31f1fcd
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [win]
 
 requirements:
