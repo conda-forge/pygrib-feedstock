@@ -23,6 +23,7 @@ requirements:
     - libpng
     - pyproj
     - zlib
+    - numpy
   run:
     - python
     - setuptools
