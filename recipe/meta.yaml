@@ -7,10 +7,12 @@ package:
 source:
   url: https://pypi.io/packages/source/p/pygrib/pygrib-{{ version }}.tar.gz
   sha256: c3a828c1121c686814c2cfe281a7a3be196a22b9754306bf61c3fd65c31f1fcd
+  patches:
+    - fix-win-build.patch  # [win]
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win and vc<14]
 
 requirements:
   build:
@@ -19,8 +21,8 @@ requirements:
     - python
     - pip
     - eccodes
-    - jasper
-    - libpng
+    - jasper  # [not win]
+    - libpng  # [not win]
     - pyproj
     - zlib
     - numpy
@@ -28,8 +30,8 @@ requirements:
     - python
     - setuptools
     - eccodes
-    - jasper
-    - libpng
+    - jasper  # [not win]
+    - libpng  # [not win]
     - numpy
     - pyproj
     - zlib
