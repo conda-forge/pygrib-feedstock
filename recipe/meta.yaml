@@ -10,6 +10,7 @@ source:
   patches:
     - fix-win-build.patch  # [win]
     - fix-openjpeg-lib.patch  # [win]
+    - fix-png-windows.patch  # [win]
 
 build:
   number: 1
