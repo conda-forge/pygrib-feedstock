@@ -27,6 +27,7 @@ requirements:
     - cython
     - eccodes
     - jasper
+    - openjpeg  # [win]
     - libpng
     - numpy
     - pyproj
@@ -37,6 +38,7 @@ requirements:
     - setuptools
     - eccodes
     - jasper
+    - openjpeg  # [win]
     - libpng
     - pyproj
     - zlib
