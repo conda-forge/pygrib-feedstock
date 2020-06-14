@@ -1,26 +1,28 @@
 c_compiler:
-- vs2015
+- vs2017
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
+jasper:
+- 1.900.1
+libpng:
+- '1.6'
 numpy:
 - '1.14'
 pin_run_as_build:
+  jasper:
+    max_pin: x
+  libpng:
+    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
-  vc:
-    max_pin: x
   zlib:
     max_pin: x.x
 python:
-- '3.8'
+- 3.6.* *_cpython
 vc:
 - '14'
-zip_keys:
-- - python
-  - vc
-  - c_compiler
 zlib:
 - '1.2'
