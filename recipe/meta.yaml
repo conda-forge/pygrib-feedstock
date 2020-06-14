@@ -19,7 +19,8 @@ requirements:
     - python
     - pip
     - eccodes
-    - jasper
+    - jasper 2.0.14  # [win]
+    - jasper  # [not win]
     - libpng
     - pyproj
     - zlib
@@ -28,7 +29,8 @@ requirements:
     - python
     - setuptools
     - eccodes
-    - jasper
+    - jasper 2.0.14  # [win]
+    - jasper  # [not win]
     - libpng
     - numpy
     - pyproj
