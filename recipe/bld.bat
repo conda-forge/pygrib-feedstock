@@ -9,3 +9,4 @@ del %LIBRARY_LIB%\zlibstatic.lib
 copy %LIBRARY_LIB%\z.lib %LIBRARY_LIB%\zlibstatic.lib
 
 %PYTHON% -m pip install . --no-deps -vv
+del %LIBRARY_LIB%\png.lib
