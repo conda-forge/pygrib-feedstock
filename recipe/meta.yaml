@@ -1,14 +1,12 @@
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 
 package:
   name: pygrib
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pygrib/pygrib-{{ version }}.tar.gz
-  sha256: c3a828c1121c686814c2cfe281a7a3be196a22b9754306bf61c3fd65c31f1fcd
-  patches:
-    - fix-win-build.patch  # [win]
+  url: https://github.com/jswhit/pygrib/archive/v{{ version }}rel.tar.gz
+  sha256: 9100f7f63751f75eb58deb7220bde5d608f9537cbeb9b41436bcbbe7ffce9a99
 
 build:
   number: 0
@@ -21,8 +19,9 @@ requirements:
     - python
     - pip
     - eccodes
+    - jasper 2.0.14  # [win]
     - jasper  # [not win]
-    - libpng  # [not win]
+    - libpng
     - pyproj
     - zlib
     - numpy
@@ -30,8 +29,9 @@ requirements:
     - python
     - setuptools
     - eccodes
+    - jasper 2.0.14  # [win]
     - jasper  # [not win]
-    - libpng  # [not win]
+    - libpng
     - numpy
     - pyproj
     - zlib
@@ -40,14 +40,17 @@ test:
   imports:
     - pygrib
   commands:
+    - pip check
     - grib_repack -h
+  requires:
+    - pip
 
 about:
   home: https://github.com/jswhit/pygrib
   license: MIT
   license_family: MIT
   license_file: COPYING
-  summary: 'Python GRIB (editions 1 and 2) reader.'
+  summary: 'Python GRIB (editions 1 and 2) reader'
   doc_url: https://jswhit.github.io/pygrib/
   dev_url: https://github.com/jswhit/pygrib
 
