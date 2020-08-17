@@ -1,0 +1,22 @@
+diff --git a/setup.py b/setup.py
+index dadfb88..afa88e9 100755
+--- a/setup.py
++++ b/setup.py
+@@ -119,7 +119,7 @@ if openjpeg_incdir is None and openjpeg_dir is not None:
+     incdirs.append(os.path.join(openjpeg_dir,'include'))
+ 
+ if png_dir is not None or png_libdir is not None:
+-    libraries.append("png")
++    libraries.append("libpng")
+ if png_libdir is None and png_dir is not None:
+     libdirs.append(os.path.join(png_dir,'lib'))
+     libdirs.append(os.path.join(png_dir,'lib64'))
+@@ -146,7 +146,7 @@ if 'jasper' not in libraries and 'openjp2' not in libraries:
+ else:
+     macros.append(('USE_JPEG2000',1))
+ # if png lib not available...
+-if 'png' not in libraries:
++if 'libpng' not in libraries:
+     g2clib_deps.remove(os.path.join('g2clib_src', 'pngpack.c'))
+     g2clib_deps.remove(os.path.join('g2clib_src', 'pngunpack.c'))
+ else:

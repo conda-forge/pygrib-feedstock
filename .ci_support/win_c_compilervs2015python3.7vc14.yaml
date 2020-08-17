@@ -4,9 +4,17 @@ channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
+libpng:
+- '1.6'
 numpy:
 - '1.14'
+openjpeg:
+- '2.3'
 pin_run_as_build:
+  libpng:
+    max_pin: x.x
+  openjpeg:
+    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x

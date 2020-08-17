@@ -9,9 +9,11 @@ source:
   sha256: c3a828c1121c686814c2cfe281a7a3be196a22b9754306bf61c3fd65c31f1fcd
   patches:
     - fix-win-build.patch  # [win]
+    - fix-openjpeg-lib.patch  # [win]
+    - fix-png-windows.patch  # [win]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -22,7 +24,8 @@ requirements:
     - pip
     - eccodes
     - jasper  # [not win]
-    - libpng  # [not win]
+    - openjpeg  # [win]
+    - libpng
     - pyproj
     - zlib
     - numpy
@@ -31,7 +34,8 @@ requirements:
     - setuptools
     - eccodes
     - jasper  # [not win]
-    - libpng  # [not win]
+    - openjpeg  # [win]
+    - libpng
     - numpy
     - pyproj
     - zlib
