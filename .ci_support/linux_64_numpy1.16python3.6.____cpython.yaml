@@ -1,14 +1,22 @@
 c_compiler:
-- vs2017
+- gcc
+c_compiler_version:
+- '7'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
+docker_image:
+- condaforge/linux-anvil-comp7
+jasper:
+- 1.900.1
 libpng:
 - '1.6'
 numpy:
-- '1.14'
+- '1.16'
 pin_run_as_build:
+  jasper:
+    max_pin: x
   libpng:
     max_pin: x.x
   python:
@@ -18,7 +26,10 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.6.* *_cpython
-vc:
-- '14'
+target_platform:
+- linux-64
+zip_keys:
+- - python
+  - numpy
 zlib:
 - '1.2'
