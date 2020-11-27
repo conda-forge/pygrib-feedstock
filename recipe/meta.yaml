@@ -1,4 +1,4 @@
-{% set version = "2.0.5" %}
+{% set version = "2.0.6" %}
 
 package:
   name: pygrib
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/jswhit/pygrib/archive/v{{ version }}rel.tar.gz
-  sha256: 9100f7f63751f75eb58deb7220bde5d608f9537cbeb9b41436bcbbe7ffce9a99
+  sha256: d9327f369a086c88c0d4bc6699b66fe030b365c82d7dd20c4554beff7742b182
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and vc<14]
 
 requirements:
@@ -50,7 +50,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: COPYING
-  summary: 'Python GRIB (editions 1 and 2) reader'
+  summary: Python GRIB (editions 1 and 2) reader
   doc_url: https://jswhit.github.io/pygrib/
   dev_url: https://github.com/jswhit/pygrib
 
