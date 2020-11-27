@@ -3,13 +3,13 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '10'
+- '11'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 jasper:
-- 1.900.1
+- '1'
 libpng:
 - '1.6'
 macos_machine:
