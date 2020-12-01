@@ -18,21 +18,22 @@ requirements:
   host:
     - python
     - pip
+    - cython
     - eccodes
-    - jasper 2.0.14  # [win]
     - jasper  # [not win]
+    - jasper 2.0.14  # [win]
     - libpng
+    - numpy
     - pyproj
     - zlib
-    - numpy
   run:
     - python
     - setuptools
     - eccodes
-    - jasper 2.0.14  # [win]
     - jasper  # [not win]
+    - jasper 2.0.14  # [win]
     - libpng
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - pyproj
     - zlib
 
