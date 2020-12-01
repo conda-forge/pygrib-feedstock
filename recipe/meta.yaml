@@ -1,4 +1,4 @@
-{% set version = "2.0.6" %}
+{% set version = "2.1" %}
 
 package:
   name: pygrib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/jswhit/pygrib/archive/v{{ version }}rel.tar.gz
-  sha256: d9327f369a086c88c0d4bc6699b66fe030b365c82d7dd20c4554beff7742b182
+  sha256: d1761a14ff89a0ceec1f99c9b0807c9479d5cf621612e2dabd3df25b09085204
 
 build:
   number: 0
@@ -18,21 +18,22 @@ requirements:
   host:
     - python
     - pip
+    - cython
     - eccodes
-    - jasper 2.0.14  # [win]
     - jasper  # [not win]
+    - jasper 2.0.14  # [win]
     - libpng
+    - numpy
     - pyproj
     - zlib
-    - numpy
   run:
     - python
     - setuptools
     - eccodes
-    - jasper 2.0.14  # [win]
     - jasper  # [not win]
+    - jasper 2.0.14  # [win]
     - libpng
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - pyproj
     - zlib
 
