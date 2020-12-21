@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/jswhit/pygrib/archive/v{{ version }}rel.tar.gz
-  sha256: 2041e39d2a7d5072117288bf0a0a36ddd919577c003ef9d0a233a12f4ef0a026
+  sha256: 5330949f0493edf1f341bc2ae8ed8daac783f2a91dc6e10fd014ae9d94b4a099
 
 build:
   number: 0
