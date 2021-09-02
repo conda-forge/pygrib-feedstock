@@ -15,7 +15,7 @@ jasper:
 libpng:
 - '1.6'
 numpy:
-- '1.17'
+- '1.18'
 pin_run_as_build:
   jasper:
     max_pin: x
