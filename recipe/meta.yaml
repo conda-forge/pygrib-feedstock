@@ -1,4 +1,4 @@
-{% set version = "2.1.3" %}
+{% set version = "2.1.4" %}
 
 package:
   name: pygrib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/jswhit/pygrib/archive/v{{ version }}rel.tar.gz
-  sha256: d9b282a5849a518ef2ab047c186edc45669e9642b0b6f1dcdbcde9a17ed02d47
+  sha256: 79e9dacbbf4fc15a6bb86194697c25a072883649c2b1e952c16c67b31b57a79c
 
 build:
   number: 0
