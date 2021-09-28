@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/jswhit/pygrib/archive/v{{ version }}rel.tar.gz
-  sha256: 79e9dacbbf4fc15a6bb86194697c25a072883649c2b1e952c16c67b31b57a79c
+  sha256: c2a5cc313469bfc10053926dec797610e2dc79bb6db075529c08be34ef69e90f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -61,5 +61,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - akrherz
     - dopplershift
     - ocefpaf
