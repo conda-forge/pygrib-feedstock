@@ -9,7 +9,7 @@ source:
   sha256: c2a5cc313469bfc10053926dec797610e2dc79bb6db075529c08be34ef69e90f
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win and vc<14]
 
 requirements:
@@ -24,8 +24,7 @@ requirements:
     - pip
     - cython
     - eccodes
-    - jasper  # [not win]
-    - jasper 2.0.14  # [win]
+    - jasper
     - libpng
     - numpy
     - pyproj
@@ -34,8 +33,7 @@ requirements:
     - python
     - setuptools
     - eccodes
-    - jasper  # [not win]
-    - jasper 2.0.14  # [win]
+    - jasper
     - libpng
     - {{ pin_compatible('numpy') }}
     - pyproj

@@ -9,7 +9,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 jasper:
-- '1'
+- '2'
 libpng:
 - '1.6'
 macos_machine:
