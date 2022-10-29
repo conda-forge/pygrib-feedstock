@@ -1,31 +1,29 @@
 c_compiler:
-- vs2017
+- gcc
+c_compiler_version:
+- '10'
+cdt_name:
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
+docker_image:
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 jasper:
 - '2'
 libpng:
 - '1.6'
 numpy:
-- '1.19'
+- '1.20'
 pin_run_as_build:
-  jasper:
-    max_pin: x
-  libpng:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
-  zlib:
-    max_pin: x.x
 python:
-- 3.7.* *_cpython
+- 3.9.* *_73_pypy
 target_platform:
-- win-64
-vc:
-- '14'
+- linux-ppc64le
 zip_keys:
 - - python
   - numpy
