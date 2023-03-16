@@ -5,7 +5,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 jasper:
-- '2'
+- '4'
 libpng:
 - '1.6'
 numpy:
