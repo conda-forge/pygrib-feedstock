@@ -8,5 +8,5 @@ copy %LIBRARY_LIB%\libpng16.lib %LIBRARY_LIB%\png.lib
 del %LIBRARY_LIB%\zlibstatic.lib
 copy %LIBRARY_LIB%\z.lib %LIBRARY_LIB%\zlibstatic.lib
 
-%PYTHON% -m pip install . --no-deps -vv
+%PYTHON% -m pip install . -vv --no-deps --no-build-isolation
 del %LIBRARY_LIB%\png.lib
