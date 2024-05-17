@@ -9,7 +9,7 @@ source:
   sha256: 245da2b809ae0a0383793df0198b1ad67333056708ddd750a0dc27814d635b90
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win and vc<14]
 
 requirements:
@@ -19,6 +19,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
@@ -35,7 +36,6 @@ requirements:
     - eccodes
     - jasper
     - libpng
-    - {{ pin_compatible('numpy') }}
     - pyproj
     - zlib
 
