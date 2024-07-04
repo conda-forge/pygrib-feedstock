@@ -32,6 +32,7 @@ requirements:
     - zlib
   run:
     - python
+    - packaging
     - setuptools
     - eccodes
     - jasper
