@@ -1,0 +1,22 @@
+diff --git a/setup.py b/setup.py
+index 48ef4f8..e363ec1 100755
+--- a/setup.py
++++ b/setup.py
+@@ -111,7 +111,7 @@ if jasper_incdir is None and jasper_dir is not None:
+     incdirs.append(os.path.join(jasper_dir,'include/jasper'))
+ 
+ if openjpeg_dir is not None or openjpeg_libdir is not None:
+-    libraries.append("openjpeg")
++    libraries.append("openjp2")
+ if openjpeg_libdir is None and openjpeg_dir is not None:
+     libdirs.append(os.path.join(openjpeg_dir,'lib'))
+     libdirs.append(os.path.join(openjpeg_dir,'lib64'))
+@@ -140,7 +140,7 @@ incdirs.append("g2clib_src")
+ macros=[]
+ 
+ # if jasper or openjpeg lib not available...
+-if 'jasper' not in libraries and 'openjpeg' not in libraries:
++if 'jasper' not in libraries and 'openjp2' not in libraries:
+     g2clib_deps.remove(os.path.join('g2clib_src', 'jpcpack.c'))
+     g2clib_deps.remove(os.path.join('g2clib_src', 'jpcunpack.c'))
+ else:
