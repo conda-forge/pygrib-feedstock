@@ -7,9 +7,11 @@ package:
 source:
   url: https://github.com/jswhit/pygrib/archive/v{{ version }}rel.tar.gz
   sha256: 4466c9b2c8f4e5a45df1fa3b733697bba8e1cc31aba0f8aae8cfd3890e48aae3
+  patches:
+    - fix-new-cython.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win and vc<14]
 
 requirements:
