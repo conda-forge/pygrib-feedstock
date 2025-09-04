@@ -1,0 +1,18 @@
+commit 915715d493b32295416783e151aa42e0b27c45df
+Author: Tim Chan <tim.chan@earthdaily.com>
+Date:   Wed May 14 12:23:59 2025 -0700
+
+    issue265-arm64 from ctypes import c_long as long
+
+diff --git a/src/pygrib/_pygrib.pyx b/src/pygrib/_pygrib.pyx
+index d0fc6bc..828178e 100644
+--- a/src/pygrib/_pygrib.pyx
++++ b/src/pygrib/_pygrib.pyx
+@@ -5,6 +5,7 @@ __version__ = '2.1.6'
+ import numpy as np
+ cimport numpy as npc
+ cimport cython
++from ctypes import c_long as long
+ import warnings
+ import os
+ from datetime import datetime
