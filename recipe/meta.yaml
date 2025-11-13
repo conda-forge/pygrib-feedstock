@@ -1,4 +1,4 @@
-{% set version = "2.1.6" %}
+{% set version = "2.1.8" %}
 
 package:
   name: pygrib
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/jswhit/pygrib/archive/v{{ version }}rel.tar.gz
-  sha256: 4466c9b2c8f4e5a45df1fa3b733697bba8e1cc31aba0f8aae8cfd3890e48aae3
+  sha256: 78bae1cf927e3083149a1b618c034882dc980bf5d3375befd93d38fafb5e3a61
   patches:
     - fix-new-cython.patch
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win and vc<14]
 
 requirements:
