@@ -14,19 +14,17 @@ source:
     - fix-new-cython.patch
 
 build:
-  number: 0
+  number: 1
   skip: win and vc<14
 
 requirements:
   build:
     - if: build_platform != target_platform
-      then: python
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }}
-    - if: build_platform != target_platform
-      then: cython
-    - if: build_platform != target_platform
-      then: numpy
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+        - cython
+        - numpy
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
   host:
@@ -56,8 +54,8 @@ tests:
         - pygrib
       pip_check: true
   - script:
-    - if: not win
-      then: grib_repack -h
+      - if: not win
+        then: grib_repack -h
 
 about:
   license: MIT
